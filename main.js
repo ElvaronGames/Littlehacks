@@ -103,12 +103,10 @@ function displayLifehack() {
     lifehackText.style.animation = 'none';
     categoryBadge.style.animation = 'none';
     
-    // Trigger reflow para reiniciar animación
-    void lifehackText.offsetWidth;
-    void categoryBadge.offsetWidth;
-    
-    lifehackText.style.animation = 'fadeIn 0.6s ease';
-    categoryBadge.style.animation = 'slideDown 0.5s ease';
+    requestAnimationFrame(() => {
+        lifehackText.style.animation = 'fadeIn 0.6s ease';
+        categoryBadge.style.animation = 'slideDown 0.5s ease';
+    });s
 }
 
 // Cambiar idioma
