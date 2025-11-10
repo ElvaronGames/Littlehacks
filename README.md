@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Littlehacks - Guía de Uso y Desarrollo
 
 ## 🚀 Inicio Rápido
@@ -179,3 +180,7 @@ Para desplegar en producción:
 ---
 
 **¡Listo! Ahora puedes agregar todos los lifehacks que desees. 🎉**
+=======
+# Littlehacks
+A website that improves your life with small hacks.
+>>>>>>> f27b4f5e66656a462e6ea55d4a16adfe9e85f63a
