@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Littlehacks - Lifehacks Útiles</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header con controles -->
+        <header class="header">
+            <h1 class="logo">Littlehacks</h1>
+            <div class="header-controls">
+                <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <select id="languageSelect" class="language-select">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- Contenedor principal del lifehack -->
+        <main class="main-content">
+            <div class="lifehack-container">
+                <!-- Categoría como píldora -->
+                <div class="category-badge" id="categoryBadge">Categoría</div>
+                
+                <!-- Texto del lifehack -->
+                <div class="lifehack-text" id="lifehackText">
+                    Cargando lifehack...
+                </div>
+            </div>
+        </main>
+
+        <!-- Botón flotante para generar nuevo lifehack -->
+        <button class="floating-button" id="nextButton">
+            <span class="button-text" id="buttonText">Otro truco</span>
+        </button>
+
+        <!-- Publicidad Monetag -->
+        <div id="monetagContainer"></div>
+    </div>
+
+    <!-- Script de Monetag -->
+    <script async src="https://cdn.monetag.com/monetag.min.js"></script>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
