@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://ep2.adtrafficquality.google">
     <link rel="preconnect" href="https://pagead2.googlesyndication.com">
 
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <link rel="stylesheet" href="./style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8263975594377959"
      crossorigin="anonymous"></script>
@@ -23,10 +26,11 @@
         <header class="header">
             <h1 class="logo">Littlehacks</h1>
             <div class="header-controls">
-                <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">
-                    <span class="theme-icon">🌙</span>
-                </button>
-                <label for="languageSelect" class="language-label">Selecciona idioma:</label>
+                <div class="theme-toggle-container">
+                    <input type="checkbox" id="themeToggle" class="theme-toggle-checkbox">
+                    <label for="themeToggle" class="theme-toggle-slider"></label>
+                </div>
+                <label for="languageSelect" class="language-label">Idioma:</label>
                 <select id="languageSelect" class="language-select">
                     <option value="es">Español</option>
                     <option value="en">English</option>

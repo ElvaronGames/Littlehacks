@@ -1,3 +1,11 @@
+// Esperar a que Lucide esté disponible
+document.addEventListener('DOMContentLoaded', () => {
+    // Inicializar Lucide Icons
+    if (window.lucide) {
+        lucide.createIcons();
+    }
+});
+
 // Función principal para cargar los lifehacks
 let lifehacks = {};
 
@@ -45,7 +53,7 @@ function loadPreferences() {
     
     if (savedTheme === 'dark') {
         document.body.classList.add('dark-mode');
-        themeToggle.querySelector('.theme-icon').textContent = '☀️';
+        themeToggle.checked = true;
     }
 }
 
